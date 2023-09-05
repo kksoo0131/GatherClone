@@ -17,4 +17,8 @@ public class ControllerEvent : MonoBehaviour
     {
         OnLookEvent?.Invoke(direction);
     }
+
+    // 컨트롤해서 움직이는 객체와
+
+    // 자동으로 움직이는 객체가 나뉜다.
 }
