@@ -5,16 +5,18 @@ using UnityEngine;
 public enum UIType
 {
     InputName,
+    SelectCharacter,
     EndPoint,
 
 }
 
 public class UIManager : MonoBehaviour
 {
-    // UI매니저는 각각의 UI창들을 가지고 있다가 UI가 호출되면 부른다.
+    // 싱글톤 클래스인 UIManager를 통해서
+    // 모든 UI클래스에 접근할 수 있다.
     public static UIManager Instance { get; private set; }
 
-    List<GameObject> _uiList;
+    public List<UI> _uiList { get; private set; }
 
     private void Awake()
     {
@@ -23,14 +25,19 @@ public class UIManager : MonoBehaviour
             Instance = this;
         }
 
-        _uiList = new List<GameObject>();
+        _uiList = new List<UI>();
 
         for (int i=0; i < (int)UIType.EndPoint; i++)
         {
             
             GameObject go = Instantiate(Resources.Load<GameObject>($"Prefabs/{((UIType)i)}"));
-            _uiList.Add(go);
+            _uiList.Add(go.GetComponent<UI>());
         }
+    }
+
+    private void Start()
+    {
+        
     }
 
     public void OnUI(UIType type)
@@ -38,18 +45,9 @@ public class UIManager : MonoBehaviour
         _uiList[(int)type].SetActive(true);
     }
 
-    public void OffUI(GameObject go)
-    {
-        go.SetActive(false);
-    }
 
     public void OffUI(UIType type)
     {
         _uiList[(int)type].SetActive(false);
-    }
-
-    public GameObject PeekUI(UIType type)
-    {
-        return _uiList[(int)type];
     }
 }
