@@ -43,4 +43,13 @@ public class UIManager : MonoBehaviour
         go.SetActive(false);
     }
 
+    public void OffUI(UIType type)
+    {
+        _uiList[(int)type].SetActive(false);
+    }
+
+    public GameObject PeekUI(UIType type)
+    {
+        return _uiList[(int)type];
+    }
 }

@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CharacterType
+{
+    Penguin,
+    Wizard,
+}
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
@@ -22,9 +27,9 @@ public class GameManager : MonoBehaviour
         UIManager.Instance.OnUI(UIType.InputName);
     }
 
-    public void CreatePlayer(string name)
+    public void CreatePlayer(string name,CharacterType type)
     {
-        Player = (GameObject)Instantiate(Resources.Load("Prefabs/Player"));
+        Player = (GameObject)Instantiate(Resources.Load($"Prefabs/{type}"));
         Player.name = name;
     }
 }

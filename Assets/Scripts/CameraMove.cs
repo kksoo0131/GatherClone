@@ -15,11 +15,6 @@ public class CameraMove : MonoBehaviour
         MoveFixedUpdate();
     }
 
-    public void TargetSetting(GameObject go)
-    {
-        _player = go.transform;
-    }
-
     private void MoveFixedUpdate()
     {
         if (_player != null)
