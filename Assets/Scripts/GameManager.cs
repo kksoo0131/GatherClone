@@ -1,12 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public enum CharacterType
-{
-    Penguin,
-    Wizard,
-}
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
