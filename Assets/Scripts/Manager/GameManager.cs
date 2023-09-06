@@ -19,13 +19,9 @@ public class GameManager : MonoBehaviour
         UIManager.Instance._uiList[(int)UIType.InputName].OnUI();
     }
 
-    public void GameStart(string name, CharacterType type)
+    public void GameStart()
     {
-        GameObject go = (GameObject)Instantiate(Resources.Load($"Prefabs/{type}"));
-        go.name = name;
-        PlayerManager.Instance._playerList.Add(go);
         UIManager.Instance._uiList[(int)UIType.MainUI].OnUI();
-
     }
     
 }

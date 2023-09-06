@@ -30,7 +30,9 @@ public class InputName : UI
             Debug.Log("2~10 글자 사이로 이름을 입력해주세요");
             return;
         }
-        GameManager.Instance.GameStart(InputField.text.ToString(), (CharacterType)selectIndex);
+        PlayerManager.Instance.ChangePlayerName(text);
+        PlayerManager.Instance.ChangePlayerSprite((CharacterType)selectIndex);
+        GameManager.Instance.GameStart();
         OffUI();
     }
 
@@ -44,6 +46,7 @@ public class InputName : UI
         _selectCharList[selectIndex].SetActive(false);
         selectIndex = index;
         _selectCharList[selectIndex].SetActive(true);
+        
     }
 
 }

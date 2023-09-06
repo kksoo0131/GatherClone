@@ -29,6 +29,10 @@ public class Look : MonoBehaviour
     
     private void LookFixedUpdate()
     {
+        if (_spriteRenderer == null)
+        {
+            _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        }
         // 마우스 위치로의 방향을 받아서 각도를 구한다
         float rotZ = Mathf.Atan2(_lookDirection.y, _lookDirection.x) * Mathf.Rad2Deg;   
         // 방향은 각도의 절대값이 90이상일떄와 90 이하일때로 나뉜다. -90 ~ 90, 91 ~ -91

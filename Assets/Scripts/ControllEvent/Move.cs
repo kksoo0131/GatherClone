@@ -38,6 +38,11 @@ public class Move : MonoBehaviour
 
     private void MoveAnimation()
     {
+        if (_anim == null)
+        {
+            _anim = GetComponentInChildren<Animator>();
+        }
+
         if (_rigidbody.velocity == Vector2.zero)
         {
             _anim.SetBool("isWalk", false);
