@@ -4,6 +4,35 @@
 
 <br/>
 
+## 과제 개요
+1. Unity 를 이용해 게더를 모방해 만드는 과제입니다.
+2. 타일맵을 이용해 배경을 꾸밉니다.
+3. 기본 UI 들을 활용해 적용하는 연습이 포함됩니다.
+
+<br/>
+
+## 구현한 필수 요구사항
+1. 캐릭터 만들기
+2. 캐릭터 이동
+3. 방 만들기
+4. 카메라 따라가기
+
+<br/>
+
+## 구현한 선택 요구사항
+1. 캐릭터 애니메이션 추가
+2. 이름 입력 시스템
+3. 캐릭터 선택 시스템
+4. 참석 인원 UI
+5. 인게임 캐릭터 선택
+6. 인게임 이름 바꾸기
+7. 시간 표시
+8. NPC대화
+
+<br/>
+
+# Scripts 내부 폴더 분류
+
 ## 1. [ControllerEvent](https://github.com/kksoo0131/GatherClone/tree/main/Assets/Scripts/ControllEvent)
 
 Controller의 Event를 구독할 기능들 이다.
