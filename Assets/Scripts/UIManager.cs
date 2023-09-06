@@ -2,13 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum UIType
-{
-    InputName,
-    SelectCharacter,
-    EndPoint,
 
-}
 
 public class UIManager : MonoBehaviour
 {
@@ -33,11 +27,6 @@ public class UIManager : MonoBehaviour
             GameObject go = Instantiate(Resources.Load<GameObject>($"Prefabs/{((UIType)i)}"));
             _uiList.Add(go.GetComponent<UI>());
         }
-    }
-
-    private void Start()
-    {
-        
     }
 
     public void OnUI(UIType type)

@@ -1193,8 +1193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputField: {fileID: 1151518563789755391}
-  SelectParent: {fileID: 7342658289696613025}
-  SelectCharacter: {fileID: 0}
+  Select: {fileID: 7342658289696613025}
 --- !u!1 &8509463834093095229
 GameObject:
   m_ObjectHideFlags: 0
