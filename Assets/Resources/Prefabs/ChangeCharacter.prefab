@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 1137184310896359038}
   - component: {fileID: -7803145126163358062}
   m_Layer: 5
-  m_Name: SelectCharacter
+  m_Name: ChangeCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

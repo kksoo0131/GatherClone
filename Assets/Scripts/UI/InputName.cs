@@ -31,14 +31,13 @@ public class InputName : UI
             return;
         }
         PlayerManager.Instance.ChangePlayerName(text);
-        PlayerManager.Instance.ChangePlayerSprite((CharacterType)selectIndex);
         GameManager.Instance.GameStart();
         OffUI();
     }
 
-    public void SelectCharacterBtn()
+    public void ChangeCharacterBtn()
     {
-        UIManager.Instance._uiList[(int)UIType.SelectCharacter].OnUI();
+        UIManager.Instance._uiList[(int)UIType.ChangeCharacter].OnUI();
     }
 
     public void ChangeSelected(int index)

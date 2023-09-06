@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectCharater : UI
+public class ChangeCharacterBtn : UI
 {
     public List<GameObject> selectList;
     private void Awake()
