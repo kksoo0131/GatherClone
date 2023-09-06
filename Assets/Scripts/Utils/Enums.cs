@@ -9,6 +9,8 @@ public enum UIType
 {
     InputName,
     SelectCharacter,
+    PlayerList,
+    MainUI,
     EndPoint,
 
 }

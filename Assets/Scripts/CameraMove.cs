@@ -18,9 +18,9 @@ public class CameraMove : MonoBehaviour
         {
             transform.position = new Vector3(_player.position.x, _player.position.y, transform.position.z);
         }
-        else if (GameManager.Instance.Player != null)
+        else if (PlayerManager.Instance.MyPlayer != null)
         { 
-            _player = GameManager.Instance.Player.transform;
+            _player = PlayerManager.Instance.MyPlayer.transform;
         }
         
     }

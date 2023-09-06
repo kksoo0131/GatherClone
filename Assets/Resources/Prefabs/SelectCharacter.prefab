@@ -122,8 +122,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InputName, Assembly-CSharp
+      - m_Target: {fileID: -7803145126163358062}
+        m_TargetAssemblyTypeName: SelectCharater, Assembly-CSharp
         m_MethodName: SelectBtn
         m_Mode: 3
         m_Arguments:
@@ -252,6 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2ad44d65d9dd90439f52820f0e32189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectList: []
 --- !u!1 &6561081429628397835
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,8 +451,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InputName, Assembly-CSharp
+      - m_Target: {fileID: -7803145126163358062}
+        m_TargetAssemblyTypeName: SelectCharater, Assembly-CSharp
         m_MethodName: SelectBtn
         m_Mode: 3
         m_Arguments:
