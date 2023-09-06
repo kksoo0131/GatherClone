@@ -8,4 +8,9 @@ public class MainUI : UI
     {
         UIManager.Instance._uiList[(int)UIType.PlayerList].OnUI();
     }
+
+    public void SelectCharacterBtn()
+    {
+        UIManager.Instance._uiList[(int)UIType.SelectCharacter].OnUI();
+    }
 }

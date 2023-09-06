@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
     // 맵에 있는 플레이어, Npc 들의 목록을 모두 관리해야됨
     public List<GameObject> _playerList { get; private set; }
     public GameObject MyPlayer { get; set; }
+    public GameObject MyPlayerCharacter { get; set; }
 
     StringBuilder sb = new StringBuilder();
 
@@ -22,6 +23,8 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        CreateMyPlayer();
+
         Player[] playerArray = FindObjectsOfType<Player>();
 
         foreach(Player p in playerArray)
@@ -43,6 +46,26 @@ public class PlayerManager : MonoBehaviour
         sb.Clear();
         return returnTemp;
     }
+    public void CreateMyPlayer()
+    {
+        GameObject go = (GameObject)Instantiate(Resources.Load($"Prefabs/Player"));        
+        MyPlayer = go;
+        MyPlayerCharacter = go.transform.GetChild(0).gameObject; 
+    }
 
+    public void ChangePlayerName(string name)
+    {
+        MyPlayer.name = name;
+    }
+
+    public void ChangePlayerSprite(CharacterType type)
+    {
+        Destroy(MyPlayerCharacter.gameObject);
+        GameObject go = (GameObject)Instantiate(Resources.Load($"Prefabs/{type}"));
+        go.transform.SetParent(MyPlayer.transform);
+        MyPlayerCharacter = go;
+        go.transform.localPosition = Vector3.zero;
+
+    }
 }
 
