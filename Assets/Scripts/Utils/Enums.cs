@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 public enum UIType
 {
     InputName,
-    SelectCharacter,
+    ChangeCharacter,
     PlayerList,
     MainUI,
+    ChangeName,
+
     EndPoint,
 
 }
