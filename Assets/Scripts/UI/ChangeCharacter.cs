@@ -15,7 +15,7 @@ public class ChangeCharacter : UI
         // 해당 함수는 InputName측에 만들어주는게 맞을듯?
         InputName inputNameUI = (InputName)(UIManager.Instance._uiList[(int)UIType.InputName]);
         inputNameUI.ChangeSelected(index);
-        PlayerManager.Instance.ChangePlayerSprite((CharacterType)index);
+        UnitManager.Instance.ChangePlayerSprite((CharacterType)index);
         OffUI();
     }
 }

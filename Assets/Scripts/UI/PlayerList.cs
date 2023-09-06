@@ -28,7 +28,7 @@ public class PlayerList : UI
 
     public void UpdatePlayerListTxt()
     {
-        playerListTxt.text = PlayerManager.Instance.ListToString();
+        playerListTxt.text = UnitManager.Instance.ListToString();
         coolDown = 1f;
     }
 }
