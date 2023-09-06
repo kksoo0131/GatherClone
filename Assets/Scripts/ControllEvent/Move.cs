@@ -11,7 +11,7 @@ public class Move : MonoBehaviour
     private void Awake()
     {
         _controller = GetComponent<PlayerController>();
-        _rigidbody = GetComponent<Rigidbody2D>();
+        _rigidbody = GetComponentInChildren<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
     }
 

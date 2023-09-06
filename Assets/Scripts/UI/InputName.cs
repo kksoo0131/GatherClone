@@ -30,7 +30,7 @@ public class InputName : UI
             Debug.Log("2~10 글자 사이로 이름을 입력해주세요");
             return;
         }
-        PlayerManager.Instance.ChangePlayerName(text);
+        UnitManager.Instance.ChangePlayerName(text);
         GameManager.Instance.GameStart();
         OffUI();
     }

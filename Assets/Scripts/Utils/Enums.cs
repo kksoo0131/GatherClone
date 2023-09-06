@@ -13,6 +13,8 @@ public enum UIType
     MainUI,
     ChangeName,
     Clock,
+    NpcInfo,
+    Talk,
 
     EndPoint,
 
