@@ -200,10 +200,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: List
+  m_text: "\uC720\uC800\n\uBAA9\uB85D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3dd50fc9f3a255a4b955153a0053e1d0, type: 2}
-  m_sharedMaterial: {fileID: 8087462884456405775, guid: 3dd50fc9f3a255a4b955153a0053e1d0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab2fc941eda13f24b89a7704c1358333, type: 2}
+  m_sharedMaterial: {fileID: -3439800067516818744, guid: ab2fc941eda13f24b89a7704c1358333, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -393,7 +393,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6559857444280984807}
         m_TargetAssemblyTypeName: MainUI, Assembly-CSharp
-        m_MethodName: SelectCharacterBtn
+        m_MethodName: ChangeCharacterBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -875,12 +875,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Select
-
-'
+  m_text: "\uCE90\uB9AD\uD130 \uC120\uD0DD\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3dd50fc9f3a255a4b955153a0053e1d0, type: 2}
-  m_sharedMaterial: {fileID: 8087462884456405775, guid: 3dd50fc9f3a255a4b955153a0053e1d0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab2fc941eda13f24b89a7704c1358333, type: 2}
+  m_sharedMaterial: {fileID: -3439800067516818744, guid: ab2fc941eda13f24b89a7704c1358333, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -943,7 +941,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &6864613774219518163
@@ -1012,12 +1010,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Name
-
-'
+  m_text: "\uC774\uB984\n\uBCC0\uACBD"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3dd50fc9f3a255a4b955153a0053e1d0, type: 2}
-  m_sharedMaterial: {fileID: 8087462884456405775, guid: 3dd50fc9f3a255a4b955153a0053e1d0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab2fc941eda13f24b89a7704c1358333, type: 2}
+  m_sharedMaterial: {fileID: -3439800067516818744, guid: ab2fc941eda13f24b89a7704c1358333, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
