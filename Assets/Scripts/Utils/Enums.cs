@@ -12,6 +12,7 @@ public enum UIType
     PlayerList,
     MainUI,
     ChangeName,
+    Clock,
 
     EndPoint,
 

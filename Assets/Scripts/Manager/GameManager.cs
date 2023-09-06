@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public void GameStart()
     {
         UIManager.Instance._uiList[(int)UIType.MainUI].OnUI();
+        UIManager.Instance._uiList[(int)UIType.Clock].OnUI();
     }
     
 }
