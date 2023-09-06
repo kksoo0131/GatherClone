@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTxt: {fileID: 3390411921571124061}
+  talktext: "\uBD80\uB974\uC168\uB098\uC694??"
 --- !u!50 &8930030489216499942
 Rigidbody2D:
   serializedVersion: 4
