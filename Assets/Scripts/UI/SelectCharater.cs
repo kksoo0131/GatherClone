@@ -15,6 +15,6 @@ public class SelectCharater : UI
         // 해당 함수는 InputName측에 만들어주는게 맞을듯?
         InputName inputNameUI = (InputName)(UIManager.Instance._uiList[(int)UIType.InputName]);
         inputNameUI.ChangeSelected(index);
-        SetActive(false);
+        OffUI();
     }
 }

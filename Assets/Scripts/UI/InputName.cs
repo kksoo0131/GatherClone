@@ -30,13 +30,13 @@ public class InputName : UI
             Debug.Log("2~10 글자 사이로 이름을 입력해주세요");
             return;
         }
-        GameManager.Instance.CreatePlayer(InputField.text.ToString(), (CharacterType)selectIndex);
-        SetActive(false);
+        GameManager.Instance.GameStart(InputField.text.ToString(), (CharacterType)selectIndex);
+        OffUI();
     }
 
     public void SelectCharacterBtn()
     {
-        UIManager.Instance._uiList[(int)(UIType.SelectCharacter)].SetActive(true);
+        UIManager.Instance._uiList[(int)UIType.SelectCharacter].OnUI();
     }
 
     public void ChangeSelected(int index)
